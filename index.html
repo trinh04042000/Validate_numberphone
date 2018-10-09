@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+     function checkPhone (str) {
+         regaxp = /^[(][4-8]{2}[)][-]{1}[(][0]{1}[1-9]{9}[)]$/;
+         if (regaxp.test(str)) {
+             console.log("Telephone number is accept");
+         }
+         else {
+             console.log("Telephone number is not accept");
+         }
+     }
+     checkPhone("098512434645");
+     checkPhone("(84)-(0978489648)");
+ </script>
+</body>
+</html>
